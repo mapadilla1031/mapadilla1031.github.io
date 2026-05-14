@@ -3,46 +3,96 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Marko Padilla — Portfolio</title>
+  <title>Marko Padilla</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <header>
-      <h1>Marko Padilla</h1>
-      <p class="tagline">Beginner web developer — learning HTML and CSS.</p>
+  <div class="page">
+    <nav class="top-nav" aria-label="Main">
+      <a class="nav-brand" href="#">Marko Padilla</a>
+      <ul class="nav-links">
+        <li><a href="#about">About me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#current">Current work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero">
+      <h1 class="hero-title">Marko Padilla</h1>
+      <p class="hero-sub">
+        Student · learning web development · building this portfolio on GitHub Pages
+      </p>
+      <div class="hero-intro">
+        <p>
+          Hello — I am Marko. I am learning how to build websites with HTML and CSS.
+          This page is a simple portfolio you can grow over time: add your major, school,
+          and links to things you care about.
+        </p>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="mailto:markopadilla@proton.me">Email me</a>
+        <a class="btn btn-outline" href="https://github.com/mapadilla1031">GitHub</a>
+        <a class="btn btn-outline" href="#">LinkedIn</a>
+        <a class="btn btn-outline" href="#">Resume</a>
+      </div>
     </header>
 
-    <section id="about">
-      <h2>About</h2>
+    <hr class="rule">
+
+    <section id="about" class="content-block">
+      <h2 class="section-label">About me</h2>
       <p>
-        I am building this site step by step. I like simple, clear pages.
-        You can replace this paragraph with a short bio about you.
+        Replace this with a longer bio: what you study, what you are curious about,
+        and what kind of work or internships you are looking for.
       </p>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
+    <section id="projects" class="content-block">
+      <h2 class="section-label">Projects</h2>
+      <ul class="plain-list">
         <li>
-          <a href="https://github.com/mapadilla1031/Personal-website">This portfolio site</a>
-          — HTML and CSS on GitHub Pages.
+          <a href="https://github.com/mapadilla1031/Personal-website">Personal website</a>
+          — this site, hosted on GitHub Pages.
         </li>
-        <li>Add more projects here as links when you have them.</li>
+        <li>Add another project here with a short one-line description.</li>
       </ul>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
+    <section id="current" class="content-block">
+      <h2 class="section-label">What I am working on now</h2>
+      <p class="update-meta"><span class="update-tag">Side project</span></p>
+      <p class="update-title">Portfolio site</p>
+      <p>
+        Practicing layout, navigation, and styling so the page looks clean on phones and laptops.
+      </p>
+      <p class="update-meta"><span class="update-tag">Side project</span></p>
+      <p class="update-title">Your next idea</p>
+      <p>
+        Describe something you are building or learning this month. Swap these blocks anytime.
+      </p>
+    </section>
+
+    <section id="contact" class="content-block">
+      <h2 class="section-label">Contact</h2>
+      <p>
+        Email:
+        <a href="mailto:markopadilla@proton.me">markopadilla@proton.me</a>
+      </p>
       <p>
         GitHub:
         <a href="https://github.com/mapadilla1031">mapadilla1031</a>
       </p>
     </section>
 
-    <footer>
-      <p>Made with HTML and CSS.</p>
+    <hr class="rule">
+
+    <footer class="site-footer">
+      <p class="footer-left">
+        © 2026 Marko Padilla · markopadilla@proton.me
+      </p>
+      <p class="footer-right">Built with GitHub Pages</p>
     </footer>
-  </main>
+  </div>
 </body>
 </html>
