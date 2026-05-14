@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library — Marko Padilla</title>
+  <meta name="description" content="Books, learning resources, and short notes from what Marko Padilla is working through.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html" class="brand">Marko Padilla</a>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="current.html">Current Work</a></li>
+        <li><a href="library.html" class="active" aria-current="page">Library</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <h1 class="page-title">Library</h1>
+    <p class="subtitle">Books, learning resources, and short notes from what I am working through. Update this blurb whenever you change cadence.</p>
+
+    <!-- In-progress books -->
+    <section class="library-section first" aria-labelledby="now-reading-label">
+      <span class="eyebrow" id="now-reading-label">Now reading</span>
+
+      <article class="now-reading-item">
+        <h3>Designing Data-Intensive Applications</h3>
+        <p class="book-meta">Martin Kleppmann · started Mar 2026</p>
+        <p class="book-note">Replication and partitioning chapters are reshaping how I think about our reporting database. Slow read but worth it.</p>
+      </article>
+
+      <article class="now-reading-item">
+        <h3>The Pragmatic Programmer</h3>
+        <p class="book-meta">Hunt &amp; Thomas · started May 2026</p>
+        <p class="book-note">Reread, second time around. The &ldquo;tracer bullets&rdquo; chapter finally clicked.</p>
+      </article>
+    </section>
+
+    <!-- Finished books -->
+    <section class="library-section" aria-labelledby="bookshelf-label">
+      <span class="eyebrow" id="bookshelf-label">Bookshelf</span>
+      <p class="section-sub">Recently finished.</p>
+
+      <div class="shelf-list">
+        <div class="shelf-row">
+          <span class="shelf-year">2026</span>
+          <div>
+            <div class="shelf-title">Atomic Habits — <span class="shelf-author">James Clear</span></div>
+            <div class="shelf-take">Habit-stacking framework actually stuck. Small routines beat big resolutions.</div>
+          </div>
+        </div>
+
+        <div class="shelf-row">
+          <span class="shelf-year">2025</span>
+          <div>
+            <div class="shelf-title">Clean Code — <span class="shelf-author">Robert C. Martin</span></div>
+            <div class="shelf-take">Useful but dated. Skim chapters 1–6, skip the rest.</div>
+          </div>
+        </div>
+
+        <div class="shelf-row">
+          <span class="shelf-year">2025</span>
+          <div>
+            <div class="shelf-title">Domain-Driven Design Quickly — <span class="shelf-author">Avram &amp; Marinescu</span></div>
+            <div class="shelf-take">Free PDF. Changed how I name things at work. Worth the 90 min.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- External courses / sites -->
+    <section class="library-section" aria-labelledby="learning-label">
+      <span class="eyebrow" id="learning-label">Learning</span>
+      <p class="section-sub">Sites and courses I actually return to.</p>
+
+      <div class="resource-list">
+        <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" class="resource-row">
+          <span class="resource-name">LeetCode</span>
+          <span class="resource-desc">Practice for data structures and algorithms — replace this line with how you use it.</span>
+        </a>
+
+        <a href="https://codingbat.com" target="_blank" rel="noopener noreferrer" class="resource-row">
+          <span class="resource-name">CodingBat</span>
+          <span class="resource-desc">Warm-up problems in Python and Java.</span>
+        </a>
+
+        <a href="https://roadmap.sh" target="_blank" rel="noopener noreferrer" class="resource-row">
+          <span class="resource-name">roadmap.sh</span>
+          <span class="resource-desc">High-level tracks when I want a map of what to study next.</span>
+        </a>
+
+        <a href="https://github.com/rust-lang/rustlings" target="_blank" rel="noopener noreferrer" class="resource-row">
+          <span class="resource-name">Rustlings</span>
+          <span class="resource-desc">Official Rust exercises — swap the link if you are not using Rust.</span>
+        </a>
+
+        <a href="https://frontendmasters.com" target="_blank" rel="noopener noreferrer" class="resource-row">
+          <span class="resource-name">Frontend Masters</span>
+          <span class="resource-desc">Paid courses; edit or remove rows you do not use.</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Short posts / links (href="#" until you host real URLs) -->
+    <section class="library-section" aria-labelledby="notes-label">
+      <div class="section-head">
+        <span class="eyebrow" id="notes-label">Notes from this month</span>
+        <a href="#" class="link-accent" title="Add RSS feed URL when available">RSS →</a>
+      </div>
+
+      <div class="notes-list">
+        <a href="#" class="notes-row">
+          <span class="note-date">12 May</span>
+          <div>
+            <div class="note-title">Why I am migrating parsers to Rust</div>
+            <div class="note-summary">Placeholder row — link to a real post when you publish one.</div>
+          </div>
+          <span class="note-arrow">→</span>
+        </a>
+
+        <a href="#" class="notes-row">
+          <span class="note-date">04 May</span>
+          <div>
+            <div class="note-title">Three things I learned debugging Postgres locks</div>
+            <div class="note-summary">A long Friday night, a stuck transaction, and a healthier respect for <code>pg_stat_activity</code>.</div>
+          </div>
+          <span class="note-arrow">→</span>
+        </a>
+
+        <a href="#" class="notes-row">
+          <span class="note-date">27 Apr</span>
+          <div>
+            <div class="note-title">A small win with cron + Slack</div>
+            <div class="note-summary">A short script replaced a manual report — edit to match your story.</div>
+          </div>
+          <span class="note-arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Library-only meta (last updated + credit); global footer follows -->
+    <div class="library-footer">
+      <span>Last updated May 2026</span>
+      <span>Inspired by <a href="https://uses.tech" target="_blank" rel="noopener noreferrer">/uses</a> and digital gardens.</span>
+    </div>
+
+    <footer class="site-footer">
+      <p>© 2026 Marko Padilla</p>
+      <p>Built with GitHub Pages</p>
+    </footer>
+  </main>
+</body>
+</html>

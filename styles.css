@@ -706,6 +706,241 @@ h2 {
   opacity: 0.92;
 }
 
+/* ---------- Library page (library.html) -----------------------------------
+   Sections: now reading, bookshelf, learning links, notes list. Reuses .eyebrow,
+   .section-head, .link-accent from shared styles.
+   -------------------------------------------------------------------------- */
+
+.library-section {
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid var(--rule);
+}
+
+.library-section.first {
+  margin-top: 32px;
+  padding-top: 0;
+  border-top: none;
+}
+
+.library-section .eyebrow {
+  margin-bottom: 18px;
+}
+
+/* Short gray line under section eyebrow (Bookshelf / Learning) */
+.section-sub {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: -10px 0 16px;
+  line-height: 1.5;
+}
+
+/* --- Now reading: in-progress books --- */
+
+.now-reading-item {
+  margin-bottom: 24px;
+}
+
+.now-reading-item:last-child {
+  margin-bottom: 0;
+}
+
+.now-reading-item h3 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 4px;
+  color: var(--text);
+}
+
+.book-meta {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.book-note {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.55;
+  max-width: 540px;
+  color: var(--text);
+}
+
+/* --- Bookshelf: finished books, year in first column --- */
+
+.shelf-list {
+  border-top: 1px solid var(--rule);
+}
+
+.shelf-row {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--rule);
+  align-items: baseline;
+}
+
+.shelf-row:last-child {
+  border-bottom: none;
+}
+
+.shelf-year {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent);
+}
+
+.shelf-title {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  color: var(--text);
+}
+
+.shelf-author {
+  opacity: 0.7;
+}
+
+.shelf-take {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 4px;
+  line-height: 1.55;
+}
+
+/* --- Learning: external resources as rows --- */
+
+.resource-list {
+  border-top: 1px solid var(--rule);
+}
+
+.resource-row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 18px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--rule);
+  align-items: baseline;
+  transition: background 0.15s;
+  color: inherit;
+}
+
+.resource-row:last-child {
+  border-bottom: none;
+}
+
+.resource-row:hover {
+  background: rgba(26, 26, 26, 0.025);
+}
+
+.resource-row:hover .resource-name {
+  color: var(--accent);
+}
+
+.resource-name {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text);
+  transition: color 0.15s;
+}
+
+.resource-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+/* --- Notes: dated rows (set href when you add posts) --- */
+
+.notes-list {
+  border-top: 1px solid var(--rule);
+}
+
+.notes-row {
+  display: grid;
+  grid-template-columns: 70px 1fr 30px;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--rule);
+  align-items: baseline;
+  transition: background 0.15s;
+  color: inherit;
+}
+
+.notes-row:last-child {
+  border-bottom: none;
+}
+
+.notes-row:hover {
+  background: rgba(26, 26, 26, 0.025);
+}
+
+.notes-row:hover .note-arrow {
+  transform: translateX(4px);
+}
+
+.note-date {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.note-title {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.note-summary {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.note-summary code {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  background: rgba(26, 26, 26, 0.06);
+  padding: 1px 6px;
+  border-radius: 3px;
+  color: var(--text);
+}
+
+.note-arrow {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--accent);
+  text-align: right;
+  transition: transform 0.15s;
+}
+
+/* Page-local meta line above global site footer */
+.library-footer {
+  border-top: 1px solid var(--rule);
+  padding-top: 18px;
+  margin-top: 40px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: var(--text-dim);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.library-footer a {
+  color: var(--accent);
+}
+
 /* ---------- Site footer ---------------------------------------------------
    margin-top: auto consumes free space in .container flex column = sticky foot
    -------------------------------------------------------------------------- */
@@ -795,5 +1030,22 @@ main.container > script {
   .btn-row {
     flex-wrap: wrap;
     gap: 16px;
+  }
+
+  /* Library: stack year / name / date columns on small screens */
+  .shelf-row,
+  .resource-row,
+  .notes-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .notes-row .note-arrow {
+    display: none;
+  }
+
+  .library-footer {
+    flex-direction: column;
+    gap: 6px;
   }
 }
