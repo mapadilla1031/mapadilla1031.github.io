@@ -1,91 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects — Marko Padilla</title>
+  <meta name="description" content="Selected work by Marko Padilla — logistics tooling and small experiments.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page page--wide">
-    <nav class="top-nav" aria-label="Main">
-      <a class="nav-brand" href="index.html">Marko Padilla</a>
-      <ul class="nav-links">
+  <main class="container">
+
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html" class="brand">Marko Padilla</a>
+      <ul>
         <li><a href="about.html">About</a></li>
-        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
         <li><a href="current.html">Current Work</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
-    <main class="inner-page inner-page--wide">
-      <h1 class="page-title">Projects</h1>
-      <p class="page-lede">
-        Selected work — mostly logistics tooling and small experiments. Newest first. Replace titles and copy with your real projects when you are ready.
-      </p>
+    <h1 class="page-title">Projects</h1>
+    <p class="subtitle">Selected work, mostly logistics tooling and small experiments. Newest first. Replace rows with your real projects when you are ready.</p>
 
-      <div class="project-filters" role="group" aria-label="Filter projects">
-        <button type="button" class="filter-btn is-active" data-filter="all">All</button>
-        <button type="button" class="filter-btn" data-filter="work">Work</button>
-        <button type="button" class="filter-btn" data-filter="side">Side</button>
-        <button type="button" class="filter-btn" data-filter="school">School</button>
+    <div class="filter-row" role="group" aria-label="Filter projects">
+      <button type="button" class="filter active" data-filter="all">All</button>
+      <button type="button" class="filter" data-filter="work">Work</button>
+      <button type="button" class="filter" data-filter="side">Side</button>
+      <button type="button" class="filter" data-filter="school">School</button>
+    </div>
+
+    <div class="project-list">
+
+      <div class="project" data-category="work">
+        <span class="project-num">01</span>
+        <div>
+          <h3>Internal ops dashboard</h3>
+          <p>Single place for weekly metrics and exceptions instead of bouncing between spreadsheets.</p>
+          <span class="stack">React · Postgres · Python</span>
+        </div>
+        <span class="project-meta">2026 →</span>
       </div>
 
-      <div class="project-list">
-        <article class="project-row" data-category="work">
-          <span class="project-row-index">01</span>
-          <div class="project-row-body">
-            <h2 class="project-row-title">Internal ops dashboard</h2>
-            <p class="project-row-desc">Single place for weekly metrics and exceptions instead of bouncing between spreadsheets.</p>
-            <p class="project-row-tech">React · Postgres · Python</p>
-          </div>
-          <span class="project-row-meta">2026 →</span>
-        </article>
-        <article class="project-row" data-category="work">
-          <span class="project-row-index">02</span>
-          <div class="project-row-body">
-            <h2 class="project-row-title">EDI / carrier integration helper</h2>
-            <p class="project-row-desc">Validation and logging around file drops so support can see what failed and why.</p>
-            <p class="project-row-tech">Python · SQL · AWS</p>
-          </div>
-          <span class="project-row-meta">2025 →</span>
-        </article>
-        <a class="project-row" href="https://github.com/mapadilla1031/Personal-website" data-category="side">
-          <span class="project-row-index">03</span>
-          <div class="project-row-body">
-            <h2 class="project-row-title">Personal website</h2>
-            <p class="project-row-desc">This site — static HTML/CSS and a light touch of JavaScript for filters.</p>
-            <p class="project-row-tech">HTML · CSS</p>
-          </div>
-          <span class="project-row-meta">2026 →</span>
-        </a>
-        <article class="project-row" data-category="school">
-          <span class="project-row-index">04</span>
-          <div class="project-row-body">
-            <h2 class="project-row-title">Capstone team project</h2>
-            <p class="project-row-desc">Placeholder row for coursework — link to repo or write-up when you add it.</p>
-            <p class="project-row-tech">TypeScript · API · Database</p>
-          </div>
-          <span class="project-row-meta">2025 →</span>
-        </article>
+      <div class="project" data-category="work">
+        <span class="project-num">02</span>
+        <div>
+          <h3>EDI / carrier integration helper</h3>
+          <p>Validation and logging around file drops so support can see what failed and why.</p>
+          <span class="stack">Python · SQL · AWS</span>
+        </div>
+        <span class="project-meta">2025 →</span>
       </div>
-    </main>
+
+      <a class="project" href="https://github.com/mapadilla1031/Personal-website" data-category="side">
+        <span class="project-num">03</span>
+        <div>
+          <h3>Personal website</h3>
+          <p>This site — static HTML/CSS and a small script for filters.</p>
+          <span class="stack">HTML · CSS</span>
+        </div>
+        <span class="project-meta">2026 →</span>
+      </a>
+
+      <div class="project" data-category="school">
+        <span class="project-num">04</span>
+        <div>
+          <h3>Capstone team project</h3>
+          <p>Placeholder row for coursework — link to repo or write-up when you add it.</p>
+          <span class="stack">TypeScript · API · Database</span>
+        </div>
+        <span class="project-meta">2025 →</span>
+      </div>
+
+    </div>
 
     <footer class="site-footer">
-      <p class="footer-left">© 2026 Marko Padilla</p>
-      <p class="footer-right">Built with GitHub Pages</p>
+      <p>© 2026 Marko Padilla</p>
+      <p>Built with GitHub Pages</p>
     </footer>
-  </div>
+  </main>
 
   <script>
     (function () {
-      var buttons = document.querySelectorAll(".filter-btn");
-      var rows = document.querySelectorAll(".project-row");
+      var buttons = document.querySelectorAll(".filter-row .filter");
+      var rows = document.querySelectorAll(".project-list .project");
       buttons.forEach(function (btn) {
         btn.addEventListener("click", function () {
           var filter = btn.getAttribute("data-filter");
           buttons.forEach(function (b) {
-            b.classList.toggle("is-active", b === btn);
+            b.classList.toggle("active", b === btn);
           });
           rows.forEach(function (row) {
             var cat = row.getAttribute("data-category");

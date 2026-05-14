@@ -1,77 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Current Work — Marko Padilla</title>
+  <meta name="description" content="What Marko Padilla is working on, learning, reading, and listening to right now.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page page--wide">
-    <nav class="top-nav" aria-label="Main">
-      <a class="nav-brand" href="index.html">Marko Padilla</a>
-      <ul class="nav-links">
+  <main class="container">
+
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html" class="brand">Marko Padilla</a>
+      <ul>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="current.html" aria-current="page">Current Work</a></li>
+        <li><a href="current.html" class="active" aria-current="page">Current Work</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
-    <main class="inner-page inner-page--wide">
-      <h1 class="page-title">Current work</h1>
-      <p class="stamp">Updated May 2026</p>
+    <h1 class="page-title">Current work</h1>
+    <span class="eyebrow now-updated">Updated May 2026</span>
 
-      <aside class="callout-box" aria-label="Highlight">
+    <div class="status-callout">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span>Shipping small improvements to internal tools every week — <strong>edit this line</strong> to match what you are focused on.</span>
+    </div>
+
+    <p class="lead now-lead">
+      A quick snapshot of what I am building, learning, and paying attention to — updated when it makes sense so visitors can see where my head is.
+    </p>
+
+    <div class="now-grid">
+      <div class="now-block">
+        <span class="eyebrow">Working on</span>
         <ul>
-          <li>Shipping small improvements to internal tools every week — edit this bullet to match what you are actually focused on.</li>
+          <li>Automation around reporting and exceptions</li>
+          <li>Sharpening this portfolio site</li>
         </ul>
-      </aside>
-
-      <p class="current-intro">
-        Short snapshot of what I am building, learning, and paying attention to. Swap the lists below for real items; the layout is meant to stay stable as the content changes.
-      </p>
-
-      <div class="current-grid">
-        <div class="current-col">
-          <h2 class="section-label">Working on</h2>
-          <ul class="current-list">
-            <li>Automation around reporting and exceptions</li>
-            <li>Sharpening this portfolio site</li>
-          </ul>
-        </div>
-        <div class="current-col">
-          <h2 class="section-label">Learning</h2>
-          <ul class="current-list">
-            <li>Deeper Postgres query plans and indexing</li>
-            <li>AWS patterns for small internal services</li>
-          </ul>
-        </div>
-        <div class="current-col">
-          <h2 class="section-label">Reading</h2>
-          <ul class="current-list">
-            <li>Docs for whatever integration is on fire this week</li>
-            <li>Replace with books or articles you want listed</li>
-          </ul>
-        </div>
-        <div class="current-col">
-          <h2 class="section-label">Listening</h2>
-          <ul class="current-list">
-            <li>Podcasts or playlists — add yours here</li>
-          </ul>
-        </div>
       </div>
 
-      <footer class="current-foot">
-        <span>Last updated May 2026</span>
-        <span><a href="index.html">Home</a></span>
-      </footer>
-    </main>
+      <div class="now-block">
+        <span class="eyebrow">Learning</span>
+        <ul>
+          <li>Deeper Postgres query plans and indexing</li>
+          <li>AWS patterns for small internal services</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="now-grid">
+      <div class="now-block">
+        <span class="eyebrow">Reading</span>
+        <p>Docs for whatever integration is on fire this week — add books or articles here.</p>
+      </div>
+
+      <div class="now-block">
+        <span class="eyebrow">Listening</span>
+        <p>Podcasts or playlists — add yours here.</p>
+      </div>
+    </div>
+
+    <div class="now-footer">
+      Last updated May 2026 · <a href="index.html">Home →</a>
+    </div>
 
     <footer class="site-footer">
-      <p class="footer-left">© 2026 Marko Padilla</p>
-      <p class="footer-right">Built with GitHub Pages</p>
+      <p>© 2026 Marko Padilla</p>
+      <p>Built with GitHub Pages</p>
     </footer>
-  </div>
+  </main>
 </body>
 </html>

@@ -1,67 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact — Marko Padilla</title>
+  <meta name="description" content="Get in touch with Marko Padilla — email, GitHub, LinkedIn.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page page--wide">
-    <nav class="top-nav" aria-label="Main">
-      <a class="nav-brand" href="index.html">Marko Padilla</a>
-      <ul class="nav-links">
+  <main class="container">
+
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html" class="brand">Marko Padilla</a>
+      <ul>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="current.html">Current Work</a></li>
-        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
       </ul>
     </nav>
 
-    <main class="inner-page inner-page--wide">
-      <h1 class="page-title">Say hello</h1>
-      <p class="contact-intro">
-        I read every message. Best for project inquiries, technical questions, or comparing notes on logistics software.
-      </p>
+    <h1 class="page-title">Say hello</h1>
+    <p class="lead contact-lead">
+      I read every message. Best for project inquiries, technical questions, or comparing notes on logistics software.
+    </p>
 
-      <div class="contact-rows">
-        <div class="contact-row">
-          <span class="contact-row-label">Email</span>
-          <p class="contact-row-value"><a href="mailto:markopadilla@proton.me">markopadilla@proton.me</a></p>
-        </div>
-        <div class="contact-row">
-          <span class="contact-row-label">GitHub</span>
-          <p class="contact-row-value"><a href="https://github.com/mapadilla1031">github.com/mapadilla1031</a></p>
-        </div>
-        <div class="contact-row">
-          <span class="contact-row-label">LinkedIn</span>
-          <p class="contact-row-value"><a href="https://www.linkedin.com/in/marko-padilla31/">linkedin.com/in/marko-padilla31</a></p>
-        </div>
-        <div class="contact-row">
-          <span class="contact-row-label">Résumé</span>
-          <p class="contact-row-value"><a href="resume.pdf">resume.pdf</a></p>
-        </div>
-        <div class="contact-row">
-          <span class="contact-row-label">Location</span>
-          <p class="contact-row-value">El Paso, TX — open to remote</p>
+    <div class="contact-grid">
+      <span class="eyebrow">Email</span>
+      <a href="mailto:markopadilla@proton.me" class="link-accent">markopadilla@proton.me</a>
+
+      <span class="eyebrow">GitHub</span>
+      <a href="https://github.com/mapadilla1031" class="link-accent">github.com/mapadilla1031</a>
+
+      <span class="eyebrow">LinkedIn</span>
+      <a href="https://www.linkedin.com/in/marko-padilla31/" class="link-accent">linkedin.com/in/marko-padilla31</a>
+
+      <span class="eyebrow">Résumé</span>
+      <a href="resume.pdf" class="link-accent">resume.pdf</a>
+
+      <span class="eyebrow">Location</span>
+      <span>El Paso, TX — open to remote</span>
+    </div>
+
+    <div class="availability">
+      <div>
+        <div class="availability-label">Availability</div>
+        <div class="availability-text">
+          Focused on my full-time role; still happy to hear from you about interesting technical problems, open source, or a quick coffee chat (virtual or in El Paso).
         </div>
       </div>
-
-      <div class="contact-banner">
-        <div class="contact-banner-text">
-          <span class="contact-banner-kicker">Availability</span>
-          <p class="contact-banner-message">
-            Focused on my full-time role; still happy to hear from you about interesting technical problems, open source, or a quick coffee chat (virtual or in El Paso).
-          </p>
-        </div>
-        <a class="btn-banner" href="mailto:markopadilla@proton.me">Email me →</a>
-      </div>
-    </main>
+      <a href="mailto:markopadilla@proton.me" class="btn">Email me →</a>
+    </div>
 
     <footer class="site-footer">
-      <p class="footer-left">© 2026 Marko Padilla</p>
-      <p class="footer-right">Built with GitHub Pages</p>
+      <p>© 2026 Marko Padilla</p>
+      <p>Built with GitHub Pages</p>
     </footer>
-  </div>
+  </main>
 </body>
 </html>
