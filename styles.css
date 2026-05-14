@@ -55,9 +55,9 @@ ul {
 /* ---------- Layout ---------- */
 
 .container {
-  max-width: 720px;
+  max-width: 760px;
   margin: 0 auto;
-  padding: 44px 32px 96px;
+  padding: 40px 28px 88px;
 }
 
 /* ---------- Navigation ---------- */
@@ -66,13 +66,14 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 72px;
+  margin-bottom: 56px;
   font-size: 14px;
   font-weight: 500;
 }
 
 .site-nav .brand {
   color: var(--text);
+  font-weight: 600;
 }
 
 .site-nav ul {
@@ -97,44 +98,50 @@ ul {
 
 h1.display {
   font-family: var(--font-serif);
-  font-size: 60px;
-  font-weight: 500;
-  line-height: 1;
-  letter-spacing: -0.015em;
-  margin-bottom: 18px;
+  font-size: clamp(2.75rem, 9vw, 3.85rem);
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+  color: var(--text);
 }
 
 h1.page-title {
   font-family: var(--font-serif);
-  font-size: 44px;
-  font-weight: 500;
-  line-height: 1;
-  letter-spacing: -0.01em;
-  margin-bottom: 10px;
+  font-size: clamp(2.25rem, 6vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+  color: var(--text);
 }
 
 h2 {
   font-family: var(--font-serif);
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 1.15;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text);
 }
 
 .eyebrow {
   display: inline-block;
-  font-size: 12px;
-  letter-spacing: 0.1em;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  letter-spacing: 0.12em;
   color: var(--accent);
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
 .lead {
   font-family: var(--font-serif);
-  font-size: 20px;
-  line-height: 1.55;
-  margin: 28px 0 0;
-  max-width: 580px;
+  font-size: clamp(1.05rem, 2.5vw, 1.28rem);
+  line-height: 1.62;
+  margin: 22px 0 0;
+  max-width: 36rem;
+  font-weight: 400;
+  color: var(--text);
 }
 
 .subtitle {
@@ -155,8 +162,9 @@ h2 {
   background: var(--text);
   color: var(--bg);
   border-radius: 100px;
+  font-family: var(--font-sans);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   transition: opacity 0.15s, transform 0.15s;
 }
 
@@ -169,14 +177,17 @@ h2 {
   display: flex;
   gap: 22px;
   align-items: center;
-  margin-top: 32px;
+  margin-top: 28px;
+  flex-wrap: wrap;
 }
 
 .link-accent {
+  font-family: var(--font-sans);
   color: var(--accent);
   text-decoration: underline;
   text-underline-offset: 3px;
   font-size: 14px;
+  font-weight: 500;
   transition: opacity 0.15s;
 }
 
@@ -187,9 +198,9 @@ h2 {
 /* ---------- Section divider ---------- */
 
 .section-divider {
-  margin-top: 72px;
-  padding-top: 22px;
-  border-top: 0.5px solid var(--text);
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
 }
 
 .section-head {
@@ -204,19 +215,27 @@ h2 {
 .featured-project {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 24px;
-  align-items: start;
+  gap: 20px 28px;
+  align-items: baseline;
 }
 
 .featured-project h2 {
-  margin-bottom: 6px;
+  font-family: var(--font-serif);
+  font-size: clamp(1.35rem, 3.5vw, 1.65rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+  color: var(--text);
 }
 
 .featured-project p {
+  font-family: var(--font-sans);
   font-size: 14px;
-  line-height: 1.6;
-  max-width: 460px;
+  line-height: 1.62;
+  max-width: 32rem;
   color: var(--text);
+  font-weight: 400;
 }
 
 .tag-row {
@@ -227,15 +246,20 @@ h2 {
 }
 
 .tag {
+  font-family: var(--font-sans);
   font-size: 11px;
-  padding: 4px 11px;
-  border: 0.5px solid var(--text);
+  font-weight: 500;
+  padding: 5px 12px;
+  border: 1px solid var(--rule);
   border-radius: 100px;
+  color: var(--text);
+  background: transparent;
 }
 
 .year {
-  font-family: var(--font-mono);
-  font-size: 13px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
   color: var(--accent);
   white-space: nowrap;
 }
@@ -271,7 +295,7 @@ h2 {
 }
 
 .project-list {
-  border-top: 0.5px solid var(--text);
+  border-top: 1px solid var(--rule);
 }
 
 .project {
@@ -279,14 +303,14 @@ h2 {
   grid-template-columns: 40px 1fr 90px;
   gap: 18px;
   padding: 22px 0;
-  border-bottom: 0.5px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
   align-items: baseline;
   transition: background 0.15s;
   color: inherit;
 }
 
-a.project:hover {
-  background: rgba(26, 26, 26, 0.02);
+.project:hover {
+  background: rgba(26, 26, 26, 0.025);
 }
 
 .project.is-hidden {
@@ -301,9 +325,12 @@ a.project:hover {
 
 .project h3 {
   font-family: var(--font-serif);
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 4px;
+  font-size: clamp(1.15rem, 2.8vw, 1.45rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+  color: var(--text);
 }
 
 .project p {
@@ -322,8 +349,9 @@ a.project:hover {
 
 .project-meta {
   text-align: right;
-  font-family: var(--font-mono);
-  font-size: 12px;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
   color: var(--text-dim);
 }
 
@@ -371,7 +399,7 @@ a.project:hover {
 }
 
 .prose-footer {
-  border-top: 0.5px solid var(--rule);
+  border-top: 1px solid var(--rule);
   padding-top: 16px;
   margin-top: 10px;
 }
@@ -389,10 +417,12 @@ a.project:hover {
 .skills-section {
   margin-top: 64px;
   padding-top: 32px;
-  border-top: 0.5px solid var(--rule);
+  border-top: 1px solid var(--rule);
 }
 
 .skills-section > h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
   margin-bottom: 8px;
 }
 
@@ -490,7 +520,9 @@ a.project:hover {
   border-left: 3px solid var(--accent);
   border-radius: 4px;
   margin-bottom: 26px;
+  font-family: var(--font-sans);
   font-size: 14px;
+  line-height: 1.55;
 }
 
 .status-callout strong {
@@ -534,7 +566,7 @@ a.project:hover {
 }
 
 .now-footer {
-  border-top: 0.5px solid var(--text);
+  border-top: 1px solid var(--rule);
   padding-top: 18px;
   margin-top: 12px;
   font-size: 12px;
@@ -567,7 +599,7 @@ a.project:hover {
   gap: 16px 28px;
   font-size: 15px;
   padding-bottom: 28px;
-  border-bottom: 0.5px solid var(--text);
+  border-bottom: 1px solid var(--rule);
   margin-top: 8px;
 }
 
@@ -658,15 +690,15 @@ a.project:hover {
   }
 
   h1.display {
-    font-size: 44px;
+    font-size: clamp(2.35rem, 10vw, 3.25rem);
   }
 
   h1.page-title {
-    font-size: 34px;
+    font-size: clamp(1.85rem, 7vw, 2.35rem);
   }
 
   .lead {
-    font-size: 18px;
+    font-size: 1.05rem;
   }
 
   .featured-project,
