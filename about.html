@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About — Marko Padilla</title>
   <meta name="description" content="About Marko Padilla — software engineer, logistics operations, El Paso, Texas.">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
@@ -16,6 +17,7 @@
     <nav class="site-nav" aria-label="Main">
       <a href="index.html" class="brand">Marko Padilla</a>
       <ul>
+        <!-- aria-current helps screen readers on the active page -->
         <li><a href="about.html" class="active" aria-current="page">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="current.html">Current Work</a></li>
@@ -23,8 +25,9 @@
       </ul>
     </nav>
 
+    <!-- Two columns: sidebar facts + main prose (no photo, per design) -->
     <div class="about-grid">
-      <aside class="about-sidebar">
+      <aside class="about-sidebar" aria-label="Quick facts">
         <div class="meta-block">
           <div class="meta-label">Based in</div>
           <div class="meta-value">El Paso, TX</div>
@@ -40,8 +43,8 @@
         </div>
       </aside>
 
-      <section>
-        <h1 class="page-title">About</h1>
+      <section aria-labelledby="about-title">
+        <h1 class="page-title" id="about-title">About</h1>
 
         <div class="prose">
           <p>
@@ -62,6 +65,7 @@
             small projects that make repetitive clicks disappear.
           </p>
 
+          <!-- Personal aside: single line, middot-separated -->
           <div class="prose-footer">
             <span class="eyebrow">A few things I like</span>
             <p>Long-running cron jobs · clean type signatures · drives across West Texas · finding the one cell that was breaking the spreadsheet.</p>
@@ -70,6 +74,7 @@
       </section>
     </div>
 
+    <!-- Skills grid: four cards; each .skill-card--* picks a top accent in CSS -->
     <section class="skills-section" id="skills" aria-labelledby="skills-heading">
       <h2 id="skills-heading">Skills</h2>
       <p class="skills-intro">
@@ -77,6 +82,7 @@
       </p>
 
       <div class="skills-grid">
+        <!-- Card 1: languages -->
         <article class="skill-card skill-card--lang">
           <h3 class="skill-card-heading">Languages</h3>
           <ul class="skill-items">
@@ -111,6 +117,7 @@
           </ul>
         </article>
 
+        <!-- Card 2: web & APIs -->
         <article class="skill-card skill-card--web">
           <h3 class="skill-card-heading">Web &amp; APIs</h3>
           <ul class="skill-items">
@@ -133,6 +140,7 @@
           </ul>
         </article>
 
+        <!-- Card 3: data -->
         <article class="skill-card skill-card--data">
           <h3 class="skill-card-heading">Data &amp; persistence</h3>
           <ul class="skill-items">
@@ -155,6 +163,7 @@
           </ul>
         </article>
 
+        <!-- Card 4: tools & practice -->
         <article class="skill-card skill-card--tools">
           <h3 class="skill-card-heading">Tools &amp; practice</h3>
           <ul class="skill-items">

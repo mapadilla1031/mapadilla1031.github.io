@@ -3,16 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Shown in Google / social previews when this URL is shared -->
   <meta name="description" content="Software engineer building automation tools for logistics operations in El Paso, Texas.">
   <title>Marko Padilla — Computer Science · Automation · Full-Stack</title>
+
+  <!-- Google Fonts: Inter (UI), Source Serif 4 (display + longform), JetBrains Mono (optional mono) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!--
+    main.container: column flex + min-height (see styles.css) keeps .site-footer
+    at the bottom of the viewport on short pages.
+  -->
   <main class="container">
 
+    <!-- Site-wide navigation: duplicate on each page; set active link per file -->
     <nav class="site-nav" aria-label="Main">
       <a href="index.html" class="brand">Marko Padilla</a>
       <ul>
@@ -23,6 +31,7 @@
       </ul>
     </nav>
 
+    <!-- Hero: large name, blue caps line, serif intro -->
     <h1 class="display">Marko Padilla</h1>
     <p class="eyebrow">Computer Science · Automation · Full-Stack · UTEP (B.S., 2025)</p>
 
@@ -30,11 +39,13 @@
       I build software for logistics operations. Currently writing automation tools at a freight company in El Paso — internal dashboards, EDI integrations, and the occasional script that saves someone an hour a day.
     </p>
 
+    <!-- Primary CTA + public email (change mailto if you use a different inbox) -->
     <div class="btn-row">
       <a href="projects.html" class="btn">See projects →</a>
       <a href="mailto:hello@markopadilla.com" class="link-accent">hello@markopadilla.com</a>
     </div>
 
+    <!-- Featured project strip: rule above, label row, then title / year / tags -->
     <section class="section-divider">
       <div class="section-head">
         <span class="eyebrow">Featured project</span>
@@ -44,7 +55,7 @@
         <div>
           <h2>Internal ops dashboard</h2>
           <p>Replaced several spreadsheets for weekly metrics and exceptions. Cut reporting time from 6h to 20min.</p>
-          <div class="tag-row">
+          <div class="tag-row" aria-label="Technologies">
             <span class="tag">React</span>
             <span class="tag">Postgres</span>
             <span class="tag">Python</span>
@@ -54,6 +65,7 @@
       </article>
     </section>
 
+    <!-- Sticky footer: copyright + hosting note (styles.css .site-footer) -->
     <footer class="site-footer">
       <p>© 2026 Marko Padilla</p>
       <p>Built with GitHub Pages</p>

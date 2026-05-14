@@ -1,23 +1,38 @@
-/* ============================================
-   Marko Padilla — Portfolio
-   Palette: #FAF8F3, #1A1A1A, #1957CC
-   ============================================ */
+/* =============================================================================
+   Marko Padilla — portfolio stylesheet
+   
+   Single file for all pages (index, about, projects, current, contact).
+   Palette: background #FAF8F3, text #1A1A1A, accent blue #1957CC.
+   
+   Layout note: body + main.container use a column flexbox with min-height
+   100dvh; .site-footer has margin-top: auto so the footer sits at the bottom
+   of the viewport when content is short. See "Layout" and "Site footer".
+   ============================================================================= */
 
+/* -----------------------------------------------------------------------------
+   Design tokens — change here to retone the whole site
+   ----------------------------------------------------------------------------- */
 :root {
+  /* Core palette */
   --bg: #faf8f3;
   --text: #1a1a1a;
   --accent: #1957cc;
 
+  /* Derived text + borders (keep contrast on cream background) */
   --text-muted: rgba(26, 26, 26, 0.75);
   --text-dim: rgba(26, 26, 26, 0.55);
   --rule: rgba(26, 26, 26, 0.15);
   --surface: #ffffff;
 
+  /* Font stacks (loaded in each HTML file from Google Fonts) */
   --font-serif: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
   --font-sans: Inter, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 }
 
+/* -----------------------------------------------------------------------------
+   Global reset — border-box sizing; strip default margins (we set per block)
+   ----------------------------------------------------------------------------- */
 *,
 *::before,
 *::after {
@@ -29,10 +44,13 @@
   padding: 0;
 }
 
+/* Smooth anchor scrolling; min-height helps percentage sizing in old engines */
 html {
   scroll-behavior: smooth;
+  min-height: 100%;
 }
 
+/* Base typography + sticky-footer column: body fills at least the viewport */
 body {
   font-family: var(--font-sans);
   background: var(--bg);
@@ -41,26 +59,43 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
   font-size: 16px;
+  min-height: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
 }
 
+/* Default links inherit body color; accent links use .link-accent */
 a {
   color: inherit;
   text-decoration: none;
 }
 
+/* Remove bullets globally; .now-block ul etc. opt back in where needed */
 ul {
   list-style: none;
 }
 
-/* ---------- Layout ---------- */
+/* ---------- Layout ----------------------------------------------------------
+   main.container wraps each page. Flex column + min-height pins footer down.
+   -------------------------------------------------------------------------- */
 
 .container {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   max-width: 760px;
   margin: 0 auto;
-  padding: 40px 28px 88px;
+  padding: 40px 28px 40px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  box-sizing: border-box;
 }
 
-/* ---------- Navigation ---------- */
+/* ---------- Navigation ----------------------------------------------------
+   Top bar: brand left, links right. .active = current page (set in HTML).
+   -------------------------------------------------------------------------- */
 
 .site-nav {
   display: flex;
@@ -94,7 +129,10 @@ ul {
   padding-bottom: 3px;
 }
 
-/* ---------- Typography ---------- */
+/* ---------- Typography ------------------------------------------------------
+   .display = home hero name; .page-title = inner page H1; .eyebrow = small caps
+   labels; .lead = serif intro paragraphs; .subtitle = projects blurb.
+   -------------------------------------------------------------------------- */
 
 h1.display {
   font-family: var(--font-serif);
@@ -152,7 +190,7 @@ h2 {
   line-height: 1.6;
 }
 
-/* ---------- Buttons & inline links ---------- */
+/* ---------- Buttons & inline links ---------------------------------------- */
 
 .btn {
   display: inline-flex;
@@ -195,7 +233,7 @@ h2 {
   opacity: 0.7;
 }
 
-/* ---------- Section divider ---------- */
+/* ---------- Section divider (home: rule above featured project) ----------- */
 
 .section-divider {
   margin-top: 56px;
@@ -210,7 +248,9 @@ h2 {
   margin-bottom: 18px;
 }
 
-/* ---------- Featured project (home) ---------- */
+/* ---------- Featured project (home only) ----------------------------------
+   Grid: title + copy left, year right, baseline-aligned.
+   -------------------------------------------------------------------------- */
 
 .featured-project {
   display: grid;
@@ -264,7 +304,10 @@ h2 {
   white-space: nowrap;
 }
 
-/* ---------- Projects page ---------- */
+/* ---------- Projects page -------------------------------------------------
+   Filters toggle .active; rows use data-category + .is-hidden (see JS).
+   .project may be <a> or <div>; both use the same grid.
+   -------------------------------------------------------------------------- */
 
 .filter-row {
   display: flex;
@@ -313,6 +356,7 @@ h2 {
   background: rgba(26, 26, 26, 0.025);
 }
 
+/* Applied by projects.html filter script when category does not match */
 .project.is-hidden {
   display: none;
 }
@@ -355,7 +399,9 @@ h2 {
   color: var(--text-dim);
 }
 
-/* ---------- About page ---------- */
+/* ---------- About page ----------------------------------------------------
+   Two columns: narrow sidebar meta, wide prose. No photo (per site owner).
+   -------------------------------------------------------------------------- */
 
 .about-grid {
   display: grid;
@@ -363,6 +409,7 @@ h2 {
   gap: 40px;
 }
 
+/* Reserved if you add a headshot later */
 .about-sidebar img {
   width: 100%;
   aspect-ratio: 1;
@@ -412,7 +459,9 @@ h2 {
   color: var(--text);
 }
 
-/* ---------- Skills (restored grid) ---------- */
+/* ---------- Skills section (about.html) -----------------------------------
+   Four cards; --card-accent colors the top stripe (accent vs text rotation).
+   -------------------------------------------------------------------------- */
 
 .skills-section {
   margin-top: 64px;
@@ -509,7 +558,9 @@ h2 {
   font-family: var(--font-sans);
 }
 
-/* ---------- Now / current work page ---------- */
+/* ---------- Current work page (current.html) ------------------------------
+   "Now" style: callout, two-column grids, small meta footer line.
+   -------------------------------------------------------------------------- */
 
 .status-callout {
   display: flex;
@@ -577,6 +628,7 @@ h2 {
   color: var(--accent);
 }
 
+/* Small layout helpers used only on current.html */
 .now-updated {
   display: block;
   margin-bottom: 28px;
@@ -591,7 +643,9 @@ h2 {
   margin: 14px 0 36px;
 }
 
-/* ---------- Contact page ---------- */
+/* ---------- Contact page --------------------------------------------------
+   Label/value grid + blue availability strip (inverted button).
+   -------------------------------------------------------------------------- */
 
 .contact-grid {
   display: grid;
@@ -652,16 +706,20 @@ h2 {
   opacity: 0.92;
 }
 
-/* ---------- Site footer ---------- */
+/* ---------- Site footer ---------------------------------------------------
+   margin-top: auto consumes free space in .container flex column = sticky foot
+   -------------------------------------------------------------------------- */
 
 .site-footer {
-  margin-top: 72px;
-  padding-top: 24px;
-  border-top: 0.5px solid var(--rule);
+  margin-top: auto;
+  padding-top: 28px;
+  border-top: 1px solid var(--rule);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   gap: 12px 20px;
+  font-family: var(--font-sans);
   font-size: 12px;
   color: var(--text-dim);
 }
@@ -670,7 +728,18 @@ h2 {
   margin: 0;
 }
 
-/* ---------- Responsive ---------- */
+/*
+ * projects.html places an inline <script> after the footer inside <main>.
+ * display:none removes it from the flex layout (script would otherwise sit
+ * as a flex item below the footer). The script still runs when parsed.
+ */
+main.container > script {
+  display: none;
+}
+
+/* ---------- Responsive ----------------------------------------------------
+   Breakpoint ~640px: stack grids, shrink display type, stack availability CTA
+   -------------------------------------------------------------------------- */
 
 @media (max-width: 640px) {
   .container {
