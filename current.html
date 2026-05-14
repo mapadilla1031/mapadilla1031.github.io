@@ -3,41 +3,73 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Current work — Marko Padilla</title>
+  <title>Current Work — Marko Padilla</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page">
+  <div class="page page--wide">
     <nav class="top-nav" aria-label="Main">
       <a class="nav-brand" href="index.html">Marko Padilla</a>
       <ul class="nav-links">
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="current.html" aria-current="page">Current work</a></li>
+        <li><a href="current.html" aria-current="page">Current Work</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
-    <main class="inner-page">
-      <h1 class="page-title">What I am working on now</h1>
+    <main class="inner-page inner-page--wide">
+      <h1 class="page-title">Current work</h1>
+      <p class="stamp">Updated May 2026</p>
 
-      <p class="update-meta"><span class="update-tag">Side project</span></p>
-      <p class="update-title">Portfolio site</p>
-      <p>
-        Practicing layout, navigation, and styling so the page looks clean on phones and laptops.
+      <aside class="callout-box" aria-label="Highlight">
+        <ul>
+          <li>Shipping small improvements to internal tools every week — edit this bullet to match what you are actually focused on.</li>
+        </ul>
+      </aside>
+
+      <p class="current-intro">
+        Short snapshot of what I am building, learning, and paying attention to. Swap the lists below for real items; the layout is meant to stay stable as the content changes.
       </p>
 
-      <p class="update-meta"><span class="update-tag">Side project</span></p>
-      <p class="update-title">Your next idea</p>
-      <p>
-        learning this month.
-      </p>
+      <div class="current-grid">
+        <div class="current-col">
+          <h2 class="section-label">Working on</h2>
+          <ul class="current-list">
+            <li>Automation around reporting and exceptions</li>
+            <li>Sharpening this portfolio site</li>
+          </ul>
+        </div>
+        <div class="current-col">
+          <h2 class="section-label">Learning</h2>
+          <ul class="current-list">
+            <li>Deeper Postgres query plans and indexing</li>
+            <li>AWS patterns for small internal services</li>
+          </ul>
+        </div>
+        <div class="current-col">
+          <h2 class="section-label">Reading</h2>
+          <ul class="current-list">
+            <li>Docs for whatever integration is on fire this week</li>
+            <li>Replace with books or articles you want listed</li>
+          </ul>
+        </div>
+        <div class="current-col">
+          <h2 class="section-label">Listening</h2>
+          <ul class="current-list">
+            <li>Podcasts or playlists — add yours here</li>
+          </ul>
+        </div>
+      </div>
+
+      <footer class="current-foot">
+        <span>Last updated May 2026</span>
+        <span><a href="index.html">Home</a></span>
+      </footer>
     </main>
 
     <footer class="site-footer">
-      <p class="footer-left">
-        © 2026 Marko Padilla
-      </p>
+      <p class="footer-left">© 2026 Marko Padilla</p>
       <p class="footer-right">Built with GitHub Pages</p>
     </footer>
   </div>

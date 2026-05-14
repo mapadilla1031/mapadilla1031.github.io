@@ -7,53 +7,59 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page">
+  <div class="page page--wide">
     <nav class="top-nav" aria-label="Main">
       <a class="nav-brand" href="index.html">Marko Padilla</a>
       <ul class="nav-links">
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="current.html">Current work</a></li>
+        <li><a href="current.html">Current Work</a></li>
         <li><a href="contact.html" aria-current="page">Contact</a></li>
       </ul>
     </nav>
 
-    <main class="inner-page inner-page--contact">
-      <h1 class="page-title">Contact</h1>
+    <main class="inner-page inner-page--wide">
+      <h1 class="page-title">Say hello</h1>
       <p class="contact-intro">
-        For roles, collaborations, or questions about my work, email is the most reliable channel.
-        Profiles and résumé are linked below.
+        I read every message. Best for project inquiries, technical questions, or comparing notes on logistics software.
       </p>
 
-      <a class="contact-email-block" href="mailto:markopadilla@proton.me">
-        <span class="contact-email-label">Email</span>
-        <span class="contact-email-address">markopadilla@proton.me</span>
-      </a>
+      <div class="contact-rows">
+        <div class="contact-row">
+          <span class="contact-row-label">Email</span>
+          <p class="contact-row-value"><a href="mailto:markopadilla@proton.me">markopadilla@proton.me</a></p>
+        </div>
+        <div class="contact-row">
+          <span class="contact-row-label">GitHub</span>
+          <p class="contact-row-value"><a href="https://github.com/mapadilla1031">github.com/mapadilla1031</a></p>
+        </div>
+        <div class="contact-row">
+          <span class="contact-row-label">LinkedIn</span>
+          <p class="contact-row-value"><a href="https://www.linkedin.com/in/marko-padilla31/">linkedin.com/in/marko-padilla31</a></p>
+        </div>
+        <div class="contact-row">
+          <span class="contact-row-label">Résumé</span>
+          <p class="contact-row-value"><a href="resume.pdf">resume.pdf</a></p>
+        </div>
+        <div class="contact-row">
+          <span class="contact-row-label">Location</span>
+          <p class="contact-row-value">El Paso, TX — open to remote</p>
+        </div>
+      </div>
 
-      <h2 class="section-label">Online</h2>
-      <div class="contact-tiles">
-        <a class="contact-tile" href="https://github.com/mapadilla1031">
-          <span class="contact-tile-title">GitHub</span>
-          <span class="contact-tile-desc">Repositories and project history</span>
-          <span class="contact-tile-url">github.com/mapadilla1031</span>
-        </a>
-        <a class="contact-tile" href="https://www.linkedin.com/in/marko-padilla31/">
-          <span class="contact-tile-title">LinkedIn</span>
-          <span class="contact-tile-desc">Professional profile</span>
-          <span class="contact-tile-url">linkedin.com/in/marko-padilla31</span>
-        </a>
-        <a class="contact-tile" href="resume.pdf">
-          <span class="contact-tile-title">Résumé</span>
-          <span class="contact-tile-desc">PDF overview of experience and skills</span>
-          <span class="contact-tile-url">resume.pdf</span>
-        </a>
+      <div class="contact-banner">
+        <div class="contact-banner-text">
+          <span class="contact-banner-kicker">Availability</span>
+          <p class="contact-banner-message">
+            Focused on my full-time role; still happy to hear from you about interesting technical problems, open source, or a quick coffee chat (virtual or in El Paso).
+          </p>
+        </div>
+        <a class="btn-banner" href="mailto:markopadilla@proton.me">Email me →</a>
       </div>
     </main>
 
     <footer class="site-footer">
-      <p class="footer-left">
-        © 2026 Marko Padilla
-      </p>
+      <p class="footer-left">© 2026 Marko Padilla</p>
       <p class="footer-right">Built with GitHub Pages</p>
     </footer>
   </div>

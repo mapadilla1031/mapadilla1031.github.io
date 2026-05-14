@@ -13,144 +13,62 @@
       <ul class="nav-links">
         <li><a href="about.html" aria-current="page">About</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="current.html">Current work</a></li>
+        <li><a href="current.html">Current Work</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
     <main class="inner-page inner-page--wide">
-      <h1 class="page-title">About</h1>
+      <div class="about-layout">
+        <aside class="about-sidebar" aria-label="Quick facts">
+          <div class="meta-block">
+            <span class="meta-label">Based in</span>
+            <p class="meta-value">El Paso, TX</p>
+          </div>
+          <div class="meta-block">
+            <span class="meta-label">Now</span>
+            <p class="meta-value">Software engineer — logistics / freight</p>
+          </div>
+          <div class="meta-block">
+            <span class="meta-label">Previously</span>
+            <p class="meta-value">UTEP — B.S. Computer Science (2025)</p>
+          </div>
+          <div class="meta-block">
+            <span class="meta-label">Tools</span>
+            <p class="meta-value">Python · TypeScript · Postgres · AWS</p>
+          </div>
+        </aside>
 
-      <p>
-        I am Marko Padilla, a computer scientist focused on automation, data pipelines, and
-        full-stack applications. I graduated from the University of Texas at El Paso with a
-        Bachelor of Science in Computer Science in May 2025. I like replacing fragile manual steps
-        with tested systems people can run with confidence — from REST backends and SQL reporting
-        to integrated web front ends.
-      </p>
+        <div class="about-main">
+          <h1 class="page-title">About</h1>
+          <p>
+            I am a computer scientist focused on automation, data pipelines, and full-stack tools that
+            people actually use every day. I graduated from the University of Texas at El Paso with a
+            B.S. in Computer Science in 2025 and have been happiest when I can turn messy operational
+            workflows into something stable and observable.
+          </p>
+          <p>
+            Most of my recent work sits at the intersection of internal web apps, SQL-backed reporting,
+            and integrations — the kind of software that keeps trucks, warehouses, and customer service
+            aligned when the day gets loud.
+          </p>
+          <p>
+            Outside of work I like reading codebases end to end, tightening types and schemas, and
+            small projects that make repetitive clicks disappear.
+          </p>
 
-      <h2 class="section-label">Education</h2>
-      <p>
-        <strong>The University of Texas at El Paso</strong> — El Paso, TX<br>
-        Bachelor of Science in Computer Science · Graduated May 2025
-      </p>
+          <hr class="about-divider" aria-hidden="true">
 
-      <h2 class="section-label" id="skills">Skills</h2>
-      <p class="skills-intro">
-        Grouped by category. Each item has a short note on how I use it in projects and coursework.
-      </p>
-
-      <div class="skills-grid">
-        <article class="skill-card skill-card--lang">
-          <h3 class="skill-card-heading">Languages</h3>
-          <ul class="skill-items">
-            <li>
-              <p class="skill-name">Python</p>
-              <p class="skill-note">Automation, FastAPI services, scripting, analytics workflows</p>
-            </li>
-            <li>
-              <p class="skill-name">JavaScript</p>
-              <p class="skill-note">Front-end integration, Node.js tooling, full-stack projects</p>
-            </li>
-            <li>
-              <p class="skill-name">SQL</p>
-              <p class="skill-note">Reporting, validation, transforms, operational data models</p>
-            </li>
-            <li>
-              <p class="skill-name">TypeScript</p>
-              <p class="skill-note">Typed interfaces where projects adopt it</p>
-            </li>
-            <li>
-              <p class="skill-name">Java</p>
-              <p class="skill-note">Coursework and object-oriented design practice</p>
-            </li>
-            <li>
-              <p class="skill-name">Bash</p>
-              <p class="skill-note">Linux environments, glue scripts, automation</p>
-            </li>
-            <li>
-              <p class="skill-name">HTML / CSS</p>
-              <p class="skill-note">Portfolio and lightweight web surfaces</p>
-            </li>
-          </ul>
-        </article>
-
-        <article class="skill-card skill-card--web">
-          <h3 class="skill-card-heading">Web &amp; APIs</h3>
-          <ul class="skill-items">
-            <li>
-              <p class="skill-name">FastAPI</p>
-              <p class="skill-note">REST services, modular backends, capstone and analytics work</p>
-            </li>
-            <li>
-              <p class="skill-name">Node.js</p>
-              <p class="skill-note">APIs and front-end/back-end integration</p>
-            </li>
-            <li>
-              <p class="skill-name">REST / HTTP</p>
-              <p class="skill-note">Design of endpoints, integration, and debugging</p>
-            </li>
-            <li>
-              <p class="skill-name">SvelteKit</p>
-              <p class="skill-note">TRACE capstone front end</p>
-            </li>
-          </ul>
-        </article>
-
-        <article class="skill-card skill-card--data">
-          <h3 class="skill-card-heading">Data &amp; persistence</h3>
-          <ul class="skill-items">
-            <li>
-              <p class="skill-name">PostgreSQL</p>
-              <p class="skill-note">Application data and reporting queries</p>
-            </li>
-            <li>
-              <p class="skill-name">MySQL</p>
-              <p class="skill-note">Operational schemas and analytics support</p>
-            </li>
-            <li>
-              <p class="skill-name">Neo4j</p>
-              <p class="skill-note">Graph data in TRACE capstone</p>
-            </li>
-            <li>
-              <p class="skill-name">CSV pipelines</p>
-              <p class="skill-note">Ingestion, validation, scheduled processing</p>
-            </li>
-          </ul>
-        </article>
-
-        <article class="skill-card skill-card--tools">
-          <h3 class="skill-card-heading">Tools &amp; practice</h3>
-          <ul class="skill-items">
-            <li>
-              <p class="skill-name">Git / GitHub</p>
-              <p class="skill-note">Branches, review, collaboration</p>
-            </li>
-            <li>
-              <p class="skill-name">Docker</p>
-              <p class="skill-note">Packaging services for repeatable runs</p>
-            </li>
-            <li>
-              <p class="skill-name">Linux / Unix</p>
-              <p class="skill-note">Shell workflows and deployment-style tasks</p>
-            </li>
-            <li>
-              <p class="skill-name">Agile / Scrum</p>
-              <p class="skill-note">Sprints, code review, iterative delivery (capstone squad)</p>
-            </li>
-            <li>
-              <p class="skill-name">Testing &amp; review</p>
-              <p class="skill-note">Unit testing concepts, debugging, structured feedback</p>
-            </li>
-          </ul>
-        </article>
+          <h2 class="section-label">A few things I like</h2>
+          <p class="likes-line">
+            Long-running cron jobs · clean type signatures · drives across West Texas · finding the one cell that was breaking the spreadsheet.
+          </p>
+        </div>
       </div>
     </main>
 
     <footer class="site-footer">
-      <p class="footer-left">
-        © 2026 Marko Padilla
-      </p>
+      <p class="footer-left">© 2026 Marko Padilla</p>
       <p class="footer-right">Built with GitHub Pages</p>
     </footer>
   </div>
