@@ -191,51 +191,14 @@ body {
   padding-bottom: 0;
 }
 
-.skill-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.4rem 0.6rem;
-}
-
 .skill-name {
+  margin: 0 0 0.2rem;
   font-weight: bold;
   font-size: 0.95rem;
 }
 
-.skill-badge {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  font-size: 0.62rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  padding: 0.15rem 0.45rem;
-  border-radius: 999px;
-  background: #e8eef5;
-  color: #1a365d;
-  border: 1px solid #c5d4e8;
-}
-
-.skill-card--web .skill-badge {
-  background: #e6f4ea;
-  color: #1c4532;
-  border-color: #b8e0c8;
-}
-
-.skill-card--data .skill-badge {
-  background: #e6fffa;
-  color: #234e52;
-  border-color: #9ae6de;
-}
-
-.skill-card--tools .skill-badge {
-  background: #fffaf0;
-  color: #7b341e;
-  border-color: #f6d9b4;
-}
-
 .skill-note {
-  margin: 0.25rem 0 0 !important;
+  margin: 0 !important;
   font-size: 0.85rem;
   color: #555;
   line-height: 1.5;
