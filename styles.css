@@ -68,6 +68,40 @@ body {
   text-decoration: underline;
 }
 
+.nav-links a[aria-current="page"] {
+  color: #1a56b0;
+  text-decoration: underline;
+}
+
+/* ——— Inner pages (about, projects, …) ——— */
+
+.inner-page {
+  max-width: 40rem;
+}
+
+.page-title {
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  font-weight: normal;
+  margin: 0 0 1rem;
+  line-height: 1.25;
+}
+
+.inner-page p {
+  margin: 0.75rem 0 0;
+}
+
+.inner-page p:first-of-type {
+  margin-top: 0;
+}
+
+.inner-page .plain-list {
+  margin-top: 0.5rem;
+}
+
+.inner-page .update-meta:first-of-type {
+  margin-top: 0.5rem !important;
+}
+
 /* ——— Hero (no photo — text only) ——— */
 
 .hero-title {
