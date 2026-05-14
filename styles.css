@@ -98,6 +98,10 @@ body {
   margin-top: 0.5rem;
 }
 
+.inner-page h2.section-label {
+  margin-top: 2rem;
+}
+
 .inner-page .update-meta:first-of-type {
   margin-top: 0.5rem !important;
 }
