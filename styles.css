@@ -106,6 +106,132 @@ body {
   margin-top: 0.5rem !important;
 }
 
+.page--wide {
+  max-width: 58rem;
+}
+
+.inner-page--wide {
+  max-width: none;
+}
+
+/* ——— Skills grid (About page) ——— */
+
+.skills-intro {
+  font-size: 0.95rem;
+  color: #444;
+  max-width: 44rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skill-card {
+  --accent: #4a6fa5;
+  background: #fafafa;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  padding: 1rem 1rem 0.75rem;
+  border-top: 3px solid var(--accent);
+}
+
+.skill-card--lang {
+  --accent: #2c5282;
+}
+
+.skill-card--web {
+  --accent: #276749;
+}
+
+.skill-card--data {
+  --accent: #2c7a7b;
+}
+
+.skill-card--tools {
+  --accent: #c05621;
+}
+
+.skill-card-heading {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0 0 0.75rem;
+  color: #222;
+}
+
+.skill-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skill-items > li {
+  padding-bottom: 0.85rem;
+  margin-bottom: 0.85rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.skill-items > li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.skill-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 0.6rem;
+}
+
+.skill-name {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.skill-badge {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  background: #e8eef5;
+  color: #1a365d;
+  border: 1px solid #c5d4e8;
+}
+
+.skill-card--web .skill-badge {
+  background: #e6f4ea;
+  color: #1c4532;
+  border-color: #b8e0c8;
+}
+
+.skill-card--data .skill-badge {
+  background: #e6fffa;
+  color: #234e52;
+  border-color: #9ae6de;
+}
+
+.skill-card--tools .skill-badge {
+  background: #fffaf0;
+  color: #7b341e;
+  border-color: #f6d9b4;
+}
+
+.skill-note {
+  margin: 0.25rem 0 0 !important;
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.5;
+}
+
 /* ——— Hero (no photo — text only) ——— */
 
 .hero-title {

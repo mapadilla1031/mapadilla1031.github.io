@@ -3,69 +3,222 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About me — Marko Padilla</title>
+  <title>About — Marko Padilla</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page">
+  <div class="page page--wide">
     <nav class="top-nav" aria-label="Main">
       <a class="nav-brand" href="index.html">Marko Padilla</a>
       <ul class="nav-links">
-        <li><a href="about.html" aria-current="page">About me</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="current.html">Current work</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
-    <main class="inner-page">
-      <h1 class="page-title">About me</h1>
+    <main class="inner-page inner-page--wide">
+      <h1 class="page-title">About</h1>
 
       <p>
-        Hi — I am Marko Padilla. I graduated from the University of Texas at El Paso with a
-        Bachelor of Science in Computer Science in May 2025. I like turning messy, manual work
-        into reliable software: automation scripts, data pipelines, and small full-stack tools
-        that people can actually use. I am detail oriented, comfortable debugging and reviewing
-        code, and always interested in learning new platforms (including RPA and workflow tools)
-        that help teams work faster with fewer errors.
+        I am Marko Padilla, a computer scientist focused on automation, data pipelines, and
+        full-stack applications. I graduated from the University of Texas at El Paso (B.S.
+        Computer Science, 2025). I like replacing fragile manual steps with tested systems people
+        can run with confidence — from REST backends and SQL reporting to integrated web front ends.
+      </p>
+      <p>
+        Outside of software projects I work in logistics (see
+        <a href="experience.html">Experience</a>), which shaped how I think about reliability,
+        documentation, and respect for operators. Representative engineering work is under
+        <a href="projects.html">Projects</a>; day-to-day focus areas are under
+        <a href="current.html">Current work</a>.
       </p>
 
-      <h2 class="section-label">Stack, work, and skills</h2>
-      <p>
-        Day to day I work most in <strong>Python</strong> and <strong>JavaScript</strong>, with
-        <strong>SQL</strong> for data and reporting. I also use <strong>TypeScript</strong>,
-        <strong>Java</strong>, and <strong>Bash</strong> when a project calls for it, and I build
-        web pieces with <strong>HTML</strong> and <strong>CSS</strong> (like this site).
-      </p>
-      <p>
-        On the backend I have used <strong>FastAPI</strong> and <strong>Node.js</strong> for
-        REST APIs, worked with <strong>PostgreSQL</strong> and <strong>MySQL</strong>, and
-        packaged services with <strong>Docker</strong>. I am used to <strong>Git</strong> on
-        <strong>GitHub</strong>, Linux-style environments, CSV ingestion, scheduled jobs, and
-        thinking about tests, code review, and the software lifecycle the way you would on a
-        real team — including <strong>Agile / Scrum</strong> from my capstone work.
-      </p>
-      <p>
-        Outside of class projects I have kept a role in logistics at FedEx Express since 2020,
-        where I train new hires, stick to tight deadlines, and collaborate under pressure. That
-        experience shaped how I write software: clear instructions, dependable delivery, and
-        respect for operations people who depend on the tool working every time.
+      <h2 class="section-label" id="skills">Skills</h2>
+      <p class="skills-intro">
+        Grouped the way many technical portfolios present them: categories, short context lines,
+        and where each item shows up most often in my work (not a years count — those are easy to misread).
       </p>
 
-      <h2 class="section-label">What I like to do</h2>
+      <div class="skills-grid">
+        <article class="skill-card skill-card--lang">
+          <h3 class="skill-card-heading">Languages</h3>
+          <ul class="skill-items">
+            <li>
+              <div class="skill-row">
+                <span class="skill-name">Python</span>
+                <span class="skill-badge">Primary</span>
+              </div>
+              <p class="skill-note">Automation, FastAPI services, scripting, analytics workflows</p>
+            </li>
+            <li>
+              <div class="skill-row">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-badge">Primary</span>
+              </div>
+              <p class="skill-note">Front-end integration, Node.js tooling, full-stack projects</p>
+            </li>
+            <li>
+              <div class="skill-row">
+                <span class="skill-name">SQL</span>
+                <span class="skill-badge">Primary</span>
+              </div>
+              <p class="skill-note">Reporting, validation, transforms, operational data models</p>
+            </li>
+            <li>
+              <div class="skill-row">
+                <span class="skill-name">TypeScript</span>
+                <span class="skill-badge">Regular</span>
+              </div>
+              <p class="skill-note">Typed interfaces where projects adopt it</p>
+            </li>
+            <li>
+              <div class="skill-row">
+                <span class="skill-name">Java</span>
+                <span class="skill-badge">Foundations</span>
+              </div>
+              <p class="skill-note">Coursework and object-oriented design practice</p>
+            </li>
+            <li>
+              <div class="skill-row">
+                <span class="skill-name">Bash</span>
+                <span class="skill-badge">Regular</span>
+              </div>
+              <p class="skill-note">Linux environments, glue scripts, automation</p>
+            </li>
+            <li>
+              <div class="skill-row">
+                <span class="skill-name">HTML / CSS</span>
+                <span class="skill-badge">Regular</span>
+              </div>
+              <p class="skill-note">Portfolio and lightweight web surfaces</p>
+            </li>
+          </ul>
+        </article>
+
+        <article class="skill-card skill-card--web">
+          <h3 class="skill-card-heading">Web &amp; APIs</h3>
+          <ul class="skill-items">
+            <li>
+              <div class="skill-row">
+                <span class="skill-name">FastAPI</span>
+                <span class="skill-badge">Primary</span>
+              </div>
+              <p class="skill-note">REST services, modular backends, capstone and analytics work</p>
+            </li>
+            <li>
+              <div class="skill-row">
+                <span class="skill-name">Node.js</span>
+                <span class="skill-badge">Regular</span>
+              </div>
+              <p class="skill-note">APIs and front-end/back-end integration</p>
+            </li>
+            <li>
+              <div class="skill-row">
+                <span class="skill-name">REST / HTTP</span>
+                <span class="skill-badge">Primary</span>
+              </div>
+              <p class="skill-note">Design of endpoints, integration, and debugging</p>
+            </li>
+            <li>
+              <div class="skill-row">
+                <span class="skill-name">SvelteKit</span>
+                <span class="skill-badge">Project</span>
+              </div>
+              <p class="skill-note">TRACE capstone front end</p>
+            </li>
+          </ul>
+        </article>
+
+        <article class="skill-card skill-card--data">
+          <h3 class="skill-card-heading">Data &amp; persistence</h3>
+          <ul class="skill-items">
+            <li>
+              <div class="skill-row">
+                <span class="skill-name">PostgreSQL</span>
+                <span class="skill-badge">Regular</span>
+              </div>
+              <p class="skill-note">Application data and reporting queries</p>
+            </li>
+            <li>
+              <div class="skill-row">
+                <span class="skill-name">MySQL</span>
+                <span class="skill-badge">Regular</span>
+              </div>
+              <p class="skill-note">Operational schemas and analytics support</p>
+            </li>
+            <li>
+              <div class="skill-row">
+                <span class="skill-name">Neo4j</span>
+                <span class="skill-badge">Project</span>
+              </div>
+              <p class="skill-note">Graph data in TRACE capstone</p>
+            </li>
+            <li>
+              <div class="skill-row">
+                <span class="skill-name">CSV pipelines</span>
+                <span class="skill-badge">Primary</span>
+              </div>
+              <p class="skill-note">Ingestion, validation, scheduled processing</p>
+            </li>
+          </ul>
+        </article>
+
+        <article class="skill-card skill-card--tools">
+          <h3 class="skill-card-heading">Tools &amp; practice</h3>
+          <ul class="skill-items">
+            <li>
+              <div class="skill-row">
+                <span class="skill-name">Git / GitHub</span>
+                <span class="skill-badge">Primary</span>
+              </div>
+              <p class="skill-note">Branches, review, collaboration</p>
+            </li>
+            <li>
+              <div class="skill-row">
+                <span class="skill-name">Docker</span>
+                <span class="skill-badge">Regular</span>
+              </div>
+              <p class="skill-note">Packaging services for repeatable runs</p>
+            </li>
+            <li>
+              <div class="skill-row">
+                <span class="skill-name">Linux / Unix</span>
+                <span class="skill-badge">Regular</span>
+              </div>
+              <p class="skill-note">Shell workflows and deployment-style tasks</p>
+            </li>
+            <li>
+              <div class="skill-row">
+                <span class="skill-name">Agile / Scrum</span>
+                <span class="skill-badge">Regular</span>
+              </div>
+              <p class="skill-note">Sprints, code review, iterative delivery (capstone squad)</p>
+            </li>
+            <li>
+              <div class="skill-row">
+                <span class="skill-name">Testing &amp; review</span>
+                <span class="skill-badge">Regular</span>
+              </div>
+              <p class="skill-note">Unit testing concepts, debugging, structured feedback</p>
+            </li>
+          </ul>
+        </article>
+      </div>
+
+      <h2 class="section-label">Focus</h2>
       <p>
-        I enjoy building <strong>automation and analytics workflows</strong> — for example a
-        delivery route performance platform where backend routines and SQL replaced recurring
-        manual reporting and sped up route planning. I also liked my capstone,
-        <strong>TRACE</strong>: a full-stack security testing tool with FastAPI, SvelteKit, and
-        Neo4j, where we automated vulnerability checks and cut down repetitive analyst work.
+        I gravitate toward <strong>automation and analytics</strong>: delivery route performance work
+        (Python, FastAPI, SQL, Docker) and the <strong>TRACE</strong> security-testing capstone
+        (FastAPI, SvelteKit, Neo4j). I also use AI-assisted development tools in a disciplined way —
+        to speed delivery, not to skip understanding.
       </p>
       <p>
-        I like learning in public: reading docs, stepping through bugs, and using modern
-        AI-assisted development tools thoughtfully (as a boost to engineering, not a shortcut past
-        understanding). If you want the fuller picture, my project write-ups and code live on
-        <a href="https://github.com/mapadilla1031">GitHub</a>, and I am on
-        <a href="https://www.linkedin.com/in/marko-padilla31">LinkedIn</a> as well.
+        Code and activity:
+        <a href="https://github.com/mapadilla1031">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/marko-padilla31">LinkedIn</a>
       </p>
     </main>
 
@@ -73,7 +226,7 @@
 
     <footer class="site-footer">
       <p class="footer-left">
-        © 2026 Marko Padilla · markopadilla@proton.me
+        © 2026 Marko Padilla
       </p>
       <p class="footer-right">Built with GitHub Pages</p>
     </footer>
