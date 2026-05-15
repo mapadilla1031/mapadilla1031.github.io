@@ -39,8 +39,32 @@
     <!-- Each row: .project grid; use <a class="project"> when the whole row is a link -->
     <div class="project-list">
 
-      <div class="project" data-category="work">
+      <div class="project project--with-gallery" data-category="side">
         <span class="project-num">01</span>
+        <div class="project-main">
+          <h3>Blueprint</h3>
+          <p>Structured documentation app for a full-stack product: stack and phase overview, frontend pages and components, backend services with endpoints and inline code, database tables, an architecture decision log, PDF reference uploads, and an &ldquo;Ask Blueprint&rdquo; assistant (stub answers today, ready for real retrieval + models later).</p>
+          <span class="stack">SvelteKit · TypeScript · Tailwind · FastAPI · SQLite</span>
+          <div class="project-gallery" aria-label="Blueprint app screenshots">
+            <figure>
+              <img src="images/projects/blueprint-overview.png" alt="Blueprint overview for the Trace sample project: lifecycle, stack, and health bars" width="1280" height="720" loading="lazy">
+              <figcaption>Overview &mdash; stack, metrics, project health</figcaption>
+            </figure>
+            <figure>
+              <img src="images/projects/blueprint-ingestion.png" alt="Blueprint backend view for the Ingestion service with classes, code sample, and API table" width="1280" height="1600" loading="lazy">
+              <figcaption>Backend &mdash; service detail, references, endpoints</figcaption>
+            </figure>
+            <figure>
+              <img src="images/projects/blueprint-ask.png" alt="Ask Blueprint assistant showing a sample question and architecture answer with citations" width="1280" height="1600" loading="lazy">
+              <figcaption>Assistant &mdash; Q&amp;A over the documented system</figcaption>
+            </figure>
+          </div>
+        </div>
+        <span class="project-meta">2026</span>
+      </div>
+
+      <div class="project" data-category="work">
+        <span class="project-num">02</span>
         <div>
           <h3>Internal ops dashboard</h3>
           <p>Single place for weekly metrics and exceptions instead of bouncing between spreadsheets.</p>
@@ -50,7 +74,7 @@
       </div>
 
       <div class="project" data-category="work">
-        <span class="project-num">02</span>
+        <span class="project-num">03</span>
         <div>
           <h3>EDI / carrier integration helper</h3>
           <p>Validation and logging around file drops so support can see what failed and why.</p>
@@ -60,7 +84,7 @@
       </div>
 
       <a class="project" href="https://github.com/mapadilla1031/Personal-website" data-category="side">
-        <span class="project-num">03</span>
+        <span class="project-num">04</span>
         <div>
           <h3>Personal website</h3>
           <p>This site — static HTML/CSS and a small script for filters.</p>
@@ -70,7 +94,7 @@
       </a>
 
       <div class="project" data-category="school">
-        <span class="project-num">04</span>
+        <span class="project-num">05</span>
         <div>
           <h3>Capstone team project</h3>
           <p>Placeholder row for coursework — link to repo or write-up when you add it.</p>
