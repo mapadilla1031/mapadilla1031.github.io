@@ -249,13 +249,13 @@ h2 {
 }
 
 /* ---------- Featured project (home only) ----------------------------------
-   Grid: title + copy left, year right, baseline-aligned.
+   Grid: index number (same style as projects) | title + copy | year, baseline.
    -------------------------------------------------------------------------- */
 
 .featured-project {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 20px 28px;
+  grid-template-columns: 40px 1fr auto;
+  gap: 18px 24px;
   align-items: baseline;
 }
 
@@ -1045,7 +1045,29 @@ main.container > script {
     font-size: 1.05rem;
   }
 
-  .featured-project,
+  .featured-project {
+    grid-template-columns: 28px 1fr;
+    gap: 14px 16px;
+  }
+
+  .featured-project .project-num {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: start;
+    padding-top: 0.2rem;
+  }
+
+  .featured-project > div {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .featured-project .year {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: end;
+  }
+
   .about-grid,
   .now-grid,
   .contact-grid {
