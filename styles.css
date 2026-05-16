@@ -656,18 +656,6 @@ h2 {
   font-style: italic;
 }
 
-.now-footer {
-  border-top: 1px solid var(--rule);
-  padding-top: 18px;
-  margin-top: 12px;
-  font-size: 12px;
-  color: var(--text-dim);
-}
-
-.now-footer a {
-  color: var(--accent);
-}
-
 /* Small layout helpers used only on current.html */
 .now-updated {
   display: block;
@@ -963,24 +951,6 @@ h2 {
   transition: transform 0.15s;
 }
 
-/* Page-local meta line above global site footer */
-.library-footer {
-  border-top: 1px solid var(--rule);
-  padding-top: 18px;
-  margin-top: 40px;
-  margin-bottom: 8px;
-  font-size: 12px;
-  color: var(--text-dim);
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.library-footer a {
-  color: var(--accent);
-}
-
 /* ---------- Site footer ---------------------------------------------------
    margin-top: auto consumes free space in .container flex column = sticky foot
    -------------------------------------------------------------------------- */
@@ -1104,10 +1074,5 @@ main.container > script {
 
   .notes-row .note-arrow {
     display: none;
-  }
-
-  .library-footer {
-    flex-direction: column;
-    gap: 6px;
   }
 }
